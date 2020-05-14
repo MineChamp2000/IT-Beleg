@@ -1,18 +1,51 @@
 <!DOCTYPE html>
-<html lang = "de">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
-        
-        <title>LernProgrammFotze</title>
-        <link rel="stylesheet" type="text/css" href="=style.css"/>
-    </head>
-    
-    <body>
-        
-        <h1>APL Lernprogramm</h1>
-        !-- hier kommt noch Text und die Fragen + Antworten-->
-    </body>
-    <footer>
+<html lang="de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    </footer>
+    <title>Lernprogramm</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>APL Lernprogramm</h1>
+    </div>
+    <div class="container">
+      <div class="card">
+        <h2>Herzlich Willkommen!</h2>
+        <a href="javascript:void(0)" class="button button-primary">Primary</a>
+        <a href="javascript:void(0)" class="button button-secondary"
+          >secondary</a
+        >
+      </div>
+      <div class="card">
+        <h2>Wähle aus folgenden Aufgabenpools:</h2>
+      </div>
+      <div class="card">
+        Fortschrittsbalken
+        <h2>Aufgabentitel</h2>
+        Lösungen<br /><br />
+
+        <br /><br />
+        <div id="success-message">Richtig!</div>
+        <div id="wrong-message">Leider falsch.</div>
+
+        <div class="button-container-right">
+          <a href="javascript:void(0)" class="button button-secondary"
+            >Lösung überprüfen</a
+          >
+          <a href="javascript:void(0)" class="button button-primary"
+            >Nächste Frage</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <h2>Du hast es geschafft!</h2>
+        <h3>Deine Statistik:</h3>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
 </html>
