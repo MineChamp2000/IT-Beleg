@@ -10,77 +10,85 @@
   </head>
 
   <body>
-    <div class="header">
-      <h1>APL Lernprogramm</h1>
-    </div>
-    <div class="container">
-      <div class="content">
-        <div class="card">
-          <h2>Herzlich Willkommen!</h2>
-          <a href="javascript:void(0)" class="button button-primary">Primary</a>
-          <a href="javascript:void(0)" class="button button-secondary"
-            >secondary</a
-          >
+    <div class="page-container">
+      <div class="header">
+        <h1>APL Lernprogramm</h1>
+      </div>
+      <div class="container">
+        <div class="content">
+          <div class="card hidden" id="card-welcome">
+            <h2>Herzlich Willkommen!</h2>
+            <a href="javascript:openMenu()" class="button button-primary"
+              >Spiel starten</a
+            >
+          </div>
+          <div class="card hidden" id="card-menu">
+            <h2>Wähle aus folgenden Aufgabenpools:</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <div
+                    onclick="startMathQuiz()"
+                    class="select-questions-container"
+                  >
+                    <h3>Mathematik</h3>
+                    <img src="res/images/mathe.png" />
+                  </div>
+                </div>
+                <div onclick="startGeneralQuiz()" class="col-6">
+                  <div class="select-questions-container">
+                    <h3>Allgemein</h3>
+                    <img src="res/images/allgemein.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card hidden" id="card-question">
+            Fortschrittsbalken
+            <h2 id="question-title">Aufgabentitel</h2>
+
+            <div class="container">
+              <div class="answer" id="answer-1"></div>
+              <div class="answer" id="answer-2"></div>
+              <div class="answer" id="answer-3"></div>
+              <div class="answer" id="answer-4"></div>
+            </div>
+
+            <br /><br />
+            <div id="success-message">Richtig!</div>
+            <div id="wrong-message">Leider falsch.</div>
+
+            <div class="button-container-right">
+              <a href="javascript:void(0)" class="button button-secondary"
+                >Lösung überprüfen</a
+              >
+              <a href="javascript:void(0)" class="button button-primary"
+                >Nächste Frage</a
+              >
+            </div>
+          </div>
+
+          <div class="card hidden" id="card-statistics">
+            <h2>Du hast es geschafft!</h2>
+            <h3>Deine Statistik:</h3>
+          </div>
         </div>
-        <div class="card">
-          <h2>Wähle aus folgenden Aufgabenpools:</h2>
+      </div>
+      <div class="footer">
+        <div class="container">
           <div class="container">
             <div class="row">
               <div class="col-6">
-                <div
-                  onclick="startMathQuiz()"
-                  class="select-questions-container"
-                >
-                  <h3>Mathematik</h3>
-                  <img src="res/images/mathe.png" />
+                <div class="text-left text-center-sm">
+                  © APL Lernprogramm 2020
                 </div>
               </div>
-              <div onclick="startGeneralQuiz()" class="col-6">
-                <div class="select-questions-container">
-                  <h3>Allgemein</h3>
-                  <img src="res/images/allgemein.png" />
+              <div class="col-6">
+                <div class="text-right text-center-sm">
+                  Impressum | Datenschutz
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          Fortschrittsbalken
-          <h2>Aufgabentitel</h2>
-          Lösungen<br /><br />
-
-          <br /><br />
-          <div id="success-message">Richtig!</div>
-          <div id="wrong-message">Leider falsch.</div>
-
-          <div class="button-container-right">
-            <a href="javascript:void(0)" class="button button-secondary"
-              >Lösung überprüfen</a
-            >
-            <a href="javascript:void(0)" class="button button-primary"
-              >Nächste Frage</a
-            >
-          </div>
-        </div>
-        <div class="card">
-          <h2>Du hast es geschafft!</h2>
-          <h3>Deine Statistik:</h3>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <div class="text-left text-center-sm">
-                © APL Lernprogramm 2020
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="text-right text-center-sm">
-                Impressum | Datenschutz
               </div>
             </div>
           </div>
