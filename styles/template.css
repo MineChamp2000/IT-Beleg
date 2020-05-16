@@ -1,7 +1,11 @@
+html {
+  font-size: 1em;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  padding-top: 4rem;
+  padding: 5rem 0 0 0;
+  min-height: 100vh;
 }
 
 .header {
@@ -18,19 +22,37 @@ body {
 .header h1 {
   margin: 0;
   line-height: 4rem;
-  font-family: sans-serif;
 }
 
+.footer {
+  width: 100%;
+  background-color: rgb(19, 36, 39);
+  padding: 3rem 0 1rem 0;
+  color: white;
+}
+
+h1,
 h2,
 h3 {
   margin: 0;
   margin-bottom: 1rem;
+  font-family: sans-serif;
 }
 
-.container {
+.text-left {
+  width: 100%;
+  text-align: left;
+}
+
+.text-right {
+  width: 100%;
+  text-align: right;
+}
+
+.content {
   max-width: 50rem;
-  padding: 0 0.5rem;
-  margin: 1rem auto;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .hidden {
@@ -40,7 +62,6 @@ h3 {
 .card {
   min-height: 20rem;
   padding: 1rem;
-  width: 100%;
   background-color: rgb(223, 231, 233);
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -50,13 +71,15 @@ h3 {
 }
 
 .button {
-  margin-top: 1rem;
+  margin: 1rem 0;
   text-decoration: none;
   padding: 0.25rem 0.5rem;
   color: inherit;
   border: 2px solid rgba(32, 55, 59);
   border-radius: 1.5rem;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  white-space: nowrap;
+  line-height: 2.25rem;
 }
 
 .button.button-primary {
@@ -74,4 +97,39 @@ h3 {
 
 .button-container-right {
   float: right;
+}
+
+.container {
+  max-width: 700px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-6 {
+  margin: 0;
+  margin-bottom: 1rem;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .text-center-sm {
+    text-align: center !important;
+  }
 }

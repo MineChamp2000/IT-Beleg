@@ -1,0 +1,19 @@
+.select-questions-container {
+  width: 10rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.select-questions-container:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.select-questions-container h3 {
+}
+
+.select-questions-container img {
+  width: 5rem;
+  margin: 0 auto;
+}
