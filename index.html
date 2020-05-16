@@ -27,12 +27,15 @@
           <div class="container">
             <div class="row">
               <div class="col-6">
-                <div class="select-questions-container">
+                <div
+                  onclick="startMathQuiz()"
+                  class="select-questions-container"
+                >
                   <h3>Mathematik</h3>
                   <img src="res/images/mathe.png" />
                 </div>
               </div>
-              <div class="col-6">
+              <div onclick="startGeneralQuiz()" class="col-6">
                 <div class="select-questions-container">
                   <h3>Allgemein</h3>
                   <img src="res/images/allgemein.png" />
@@ -83,6 +86,10 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="scripts">
+      <script type="text/javascript" src="js/index.js"></script>
     </div>
   </body>
 </html>
