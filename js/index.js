@@ -24,11 +24,11 @@ require("res/aufgabenpool.js");
 require("js/quiz.js");
 
 function startMathQuiz() {
-  new Quiz(allquestions.teilMathe);
+  new Quiz(allquestions.teilMathe, "mathe").start();
 }
 
 function startGeneralQuiz() {
-  new Quiz(allquestions.teilAllgemein).start();
+  new Quiz(allquestions.teilAllgemein, "allgemein").start();
 }
 
 function openWelcome() {
@@ -76,5 +76,13 @@ function hide(element) {
     element.style.display = "none";
   }, 300);
 }
+
+initAnswerEventListeners = (ids) => {
+  ids.array.forEach((id) => {
+    document
+      .getElementById(id)
+      .addEventListener("click", this.checkAnswer.bind(this));
+  });
+};
 
 openWelcome();

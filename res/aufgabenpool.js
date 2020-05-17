@@ -3,11 +3,11 @@ var allquestions = {
     { a: "x^2+x^2", l: ["2x^2", "x^4", "x^8", "2x^4"] },
     { a: "x^2*x^2", l: ["x^4", "x^2", "2x^2", "4x"] },
     { a: "3+2*5", l: ["13", "30", "25", "15"] },
-    { a: "875000000 mm ", l: ["875 km", "875 m", "875 dm", "875 000 cm"] },
+    { a: "875000000 mm ", l: ["8750 km", "875 m", "875 dm", "875 000 cm"] },
     { a: "1km", l: ["1000m", "10m", "100m", "10000m"] },
-    { a: "log(2)16", l: ["4", "8", "16", "2"] },
+    { a: "\\log_{16}(2)", l: ["4", "8", "16", "2"] },
     { a: "125 m", l: ["12500 cm", "1250 cm", "1250000 cm", "125000 cm"] },
-    { a: "x^2+x^3", l: ["x^5", "x^2", "2x^2", "4x"] },
+    { a: "x^2+x^3", l: ["x^2+x^3", "x^5", "2x^2", "4x"] },
     { a: "5*(6-3)", l: ["15", "16", "17", "18"] },
     { a: "3*7+5*(9+3)", l: ["81", "32", "101", "12"] },
     { a: "12+7*3", l: ["33", "32", "12", "98"] },
@@ -35,11 +35,11 @@ var allquestions = {
     },
     {
       a: 'Welcher Agent steht im Zusammenhang mit der "Lizenz zum Töten"?',
-      l: ["747", "828", "650", "1150"],
+      l: ["007", "828", "650", "1150"],
     },
     {
-      a: "Wer ist an der Wirtschaftskrise 2020 Schuld?",
-      l: ["Angela Merkel", "Esel", "Affe", "Corona"],
+      a: "Wer oder was ist an der Wirtschaftskrise 2020 Schuld?",
+      l: ["Corona", "Esel", "Affe", "Angela Merkel"],
     },
     {
       a:
