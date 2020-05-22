@@ -19,9 +19,10 @@ var cardStatistics = document.getElementById("card-statistics");
 require("res/aufgabenpool.js");
 
 /**
- * class Quiz
+ * class Quiz + ProgressBar
  */
 require("js/quiz.js");
+require("js/progressbar.js");
 
 function startMathQuiz() {
   new Quiz(allquestions.teilMathe, "mathe").start();

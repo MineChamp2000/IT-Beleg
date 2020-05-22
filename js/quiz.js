@@ -30,10 +30,15 @@ class Quiz {
 
       this.loadQuestion(randomQuestion);
     }
+    this.progressBar.setValue(
+      (this.answeredQuestions.length / this.questionsPerQuiz) * 100
+    );
   };
 
   start = () => {
     openQuestion(); //show card: question
+    this.progressBar = new ProgressBar("progressbar");
+    this.progressBar.setValue(0);
     this.next();
   };
 
