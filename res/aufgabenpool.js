@@ -71,5 +71,32 @@ var allquestions = {
         "Adolf Hitler",
       ],
     },
+    {
+      a: "Was bedeuted die Abkürzung VPN?",
+      l: [
+          "Virtua Private Network",
+          "Visual Private Net",
+          "Virtual Private Node",
+          "Vision Protocol Networc",
+      ],
+    },
+    {
+      a: "In welcher Schricht arbeitet TLS?",
+      l:[
+        "Application layer",
+        "Physical layer",
+        "Network layer",
+        "Session layer",
+      ]
+    },
+    {
+      a: "Wer ist OSI",
+      l:[
+        "Open Systems Interconnection model",
+        "Open Secure Institute",
+        "Olap Session Interface",
+        "Open Session Injection",
+      ]
+    }
   ],
 };
