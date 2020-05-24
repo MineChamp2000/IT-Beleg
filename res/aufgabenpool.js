@@ -12,6 +12,11 @@ var allquestions = {
     { a: "3*7+5*(9+3)", l: ["81", "32", "101", "12"] },
     { a: "12+7*3", l: ["33", "32", "12", "98"] },
     { a: "a × b", l: [" −(b × a)", "(-b × a)", "(b × -a)", "(-b × -a)"] },
+
+    /* diese Aufgaben können nicht richrtig gerendert werden 
+    ** sind nur zum Test 
+    */
+    { a: "\binom{n}{k}", l: ["\sqrt{a^2 + b^2}" , "\sqrt{a^2 + b^2}", "\sqrt{a^2 + b^2}", "\sqrt{a^2 + b^2}"] },
   ],
   teilAllgemein: [
     { a: "Karl der Große, Geburtsjahr", l: ["747", "828", "650", "1150"] },
