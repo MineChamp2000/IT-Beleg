@@ -86,11 +86,21 @@ h3 {
   border-radius: 1.5rem;
   font-family: "Comic Sans MS", cursive, sans-serif;
   white-space: nowrap;
+  transition: background-color 0.2s;
 }
 
 .button.button-primary {
   color: white;
   background-color: rgba(32, 55, 59);
+}
+
+.button.button-negative {
+  color: white;
+  background-color: rgb(209, 102, 102);
+}
+
+.button.button-negative:hover {
+  background-color: rgb(187, 76, 76);
 }
 
 .button.button-secondary:hover {
@@ -113,6 +123,10 @@ h3 {
   margin-left: auto;
 }
 
+.center {
+  margin: 0 auto;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -127,10 +141,21 @@ h3 {
   max-width: 100%;
 }
 
+.col-4 {
+  margin: 0;
+  margin-bottom: 1rem;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 576px) {
   .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .col-4 {
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
   }
 }
 

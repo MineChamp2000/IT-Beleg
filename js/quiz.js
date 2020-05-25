@@ -21,7 +21,11 @@ class Quiz {
 
   next = () => {
     if (this.answeredQuestions.length === this.questionsPerQuiz) {
-      openStatistics();
+      let ammCorrect = 0;
+      this.answeredQuestions.forEach((q) => {
+        if (q.correct) ammCorrect++;
+      });
+      openStatistics(ammCorrect, this.questionsPerQuiz);
     } else {
       var randomQuestion = this.questions[
         Math.floor(Math.random() * this.questions.length)

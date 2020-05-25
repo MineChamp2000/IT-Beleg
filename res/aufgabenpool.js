@@ -94,7 +94,7 @@ var allquestions = {
       ],
     },
     {
-      a: "In welcher Schricht arbeitet TLS?",
+      a: "In welcher Schicht arbeitet TLS?",
       l: [
         "Application layer",
         "Physical layer",

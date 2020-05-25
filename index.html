@@ -39,10 +39,15 @@
       <div class="container">
         <div class="content">
           <div class="card hidden" id="card-welcome">
-            <h2>Herzlich Willkommen!</h2>
-            <a href="javascript:openMenu()" class="button button-primary"
-              >Spiel starten</a
-            >
+            <h2 style="text-align: center;">Herzlich Willkommen!</h2>
+            <div style="text-align: center;">
+              <a href="javascript:openMenu()" class="button button-primary"
+                >Spiel starten</a
+              >
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+              <img width="200px" src="res/images/welcome.png" />
+            </div>
           </div>
           <div class="card hidden" id="card-menu">
             <h2>Wähle aus folgenden Aufgabenpools:</h2>
@@ -57,12 +62,22 @@
                     <img src="res/images/mathe.png" />
                   </div>
                 </div>
-                <div onclick="startGeneralQuiz()" class="col-6">
-                  <div class="select-questions-container">
+                <div class="col-6">
+                  <div
+                    onclick="startGeneralQuiz()"
+                    class="select-questions-container"
+                  >
                     <h3>Allgemein</h3>
                     <img src="res/images/allgemein.png" />
                   </div>
                 </div>
+              </div>
+              <div class="row">
+                <a
+                  href="javascript:openWelcome()"
+                  class="button button-secondary"
+                  >Zurück</a
+                >
               </div>
             </div>
           </div>
@@ -79,11 +94,36 @@
               <div class="answer" id="answer-3"></div>
               <div class="answer" id="answer-4"></div>
             </div>
+            <br />
+            <div class="row">
+              <div class="center">
+                <a
+                  href="javascript:cancelGame()"
+                  id="button-cancel-game"
+                  class="button button-negative"
+                  >Spiel abbrechen</a
+                >
+              </div>
+            </div>
           </div>
 
           <div class="card hidden" id="card-statistics">
             <h2>Du hast es geschafft!</h2>
             <h3>Deine Statistik</h3>
+            <div id="statisticsbar" class="progressbar statisticsbar"></div>
+            <div class="row">
+              <div class="col-6">
+                <div id="statistics-amm-correct"></div>
+              </div>
+              <div class="col-6">
+                <div id="statistics-amm-wrong"></div>
+              </div>
+            </div>
+            <div class="row">
+              <a href="javascript:openWelcome()" class="button button-secondary"
+                >Zum Hauptmenu</a
+              >
+            </div>
           </div>
         </div>
       </div>

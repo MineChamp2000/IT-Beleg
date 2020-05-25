@@ -53,11 +53,19 @@ function openQuestion() {
   hide(cardStatistics);
 }
 
-function openStatistics() {
+function openStatistics(ammCorrect, ammTotal) {
   hide(cardMenu);
   hide(cardWelcome);
   hide(cardQuestion);
   show(cardStatistics);
+
+  let bar = new ProgressBar("statisticsbar");
+  bar.setValue((ammCorrect / ammTotal) * 100);
+
+  document.getElementById("statistics-amm-correct").innerHTML =
+    ammCorrect + " richtig";
+  document.getElementById("statistics-amm-wrong").innerHTML =
+    ammTotal - ammCorrect + " falsch";
 }
 
 function show(element) {
@@ -84,6 +92,28 @@ initAnswerEventListeners = (ids) => {
       .getElementById(id)
       .addEventListener("click", this.checkAnswer.bind(this));
   });
+};
+
+var confirming = false;
+
+cancelGame = async () => {
+  if (confirming) {
+    openWelcome();
+    return;
+  }
+  confirming = true;
+  let bCancel = document.getElementById("button-cancel-game");
+  bCancel.innerHTML = "Abbruch Bestätigen (3)";
+  setTimeout(() => {
+    bCancel.innerHTML = "Abbruch Bestätigen (2)";
+  }, 1000);
+  setTimeout(() => {
+    bCancel.innerHTML = "Abbruch Bestätigen (1)";
+  }, 2000);
+  setTimeout(() => {
+    bCancel.innerHTML = "Spiel abbrechen";
+    confirming = false;
+  }, 3000);
 };
 
 openWelcome();
