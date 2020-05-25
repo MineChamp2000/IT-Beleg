@@ -13,10 +13,18 @@ var allquestions = {
     { a: "12+7*3", l: ["33", "32", "12", "98"] },
     { a: "a × b", l: [" −(b × a)", "(-b × a)", "(b × -a)", "(-b × -a)"] },
 
-    /* diese Aufgaben können nicht richrtig gerendert werden 
-    ** sind nur zum Test 
-    */
-    { a: "\binom{n}{k}", l: ["\sqrt{a^2 + b^2}" , "\sqrt{a^2 + b^2}", "\sqrt{a^2 + b^2}", "\sqrt{a^2 + b^2}"] },
+    /* diese Aufgaben können nicht richrtig gerendert werden
+     ** sind nur zum Test
+     */
+    {
+      a: "\\binom{n}{k}",
+      l: [
+        "\\sqrt{a^2 + b^2}",
+        "\\sqrt{a^2 + b^2}",
+        "\\sqrt{a^2 + b^2}",
+        "\\sqrt{a^2 + b^2}",
+      ],
+    },
   ],
   teilAllgemein: [
     { a: "Karl der Große, Geburtsjahr", l: ["747", "828", "650", "1150"] },
@@ -79,29 +87,29 @@ var allquestions = {
     {
       a: "Was bedeuted die Abkürzung VPN?",
       l: [
-          "Virtua Private Network",
-          "Visual Private Net",
-          "Virtual Private Node",
-          "Vision Protocol Networc",
+        "Virtua Private Network",
+        "Visual Private Net",
+        "Virtual Private Node",
+        "Vision Protocol Networc",
       ],
     },
     {
       a: "In welcher Schricht arbeitet TLS?",
-      l:[
+      l: [
         "Application layer",
         "Physical layer",
         "Network layer",
         "Session layer",
-      ]
+      ],
     },
     {
       a: "Wer ist OSI",
-      l:[
+      l: [
         "Open Systems Interconnection model",
         "Open Secure Institute",
         "Olap Session Interface",
         "Open Session Injection",
-      ]
-    }
+      ],
+    },
   ],
 };
